@@ -1,0 +1,18 @@
+// Beets varables
+@import "beets-variables";
+
+// Bootstrap variables
+@import "bootstrap/bootstrap-5.1.1/scss/variables";
+
+// Beets code that needs to be implemented after Bootstrap variables
+// $theme-colors: map-merge($theme-colors, $beets-theme-colors);
+// $theme-colors: map-merge($theme-colors, $beets-custom-theme-colors);
+
+// // scss-docs-start theme-colors-rgb
+// $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
+// // scss-docs-end theme-colors-rgb
+
+$display-font-sizes: map-merge($display-font-sizes, $beets-display-font-sizes);
+$table-variants: map-merge($table-variants, $beets-table-variants);
+$spacers: map-merge($spacers, $beets-spacers);
+$container-max-widths: map-merge($container-max-widths, $beets-container-max-widths);

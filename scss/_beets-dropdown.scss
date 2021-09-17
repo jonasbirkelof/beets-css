@@ -1,0 +1,14 @@
+$beets-dropdown-box-shadow: 	$dropdown-box-shadow;
+
+// The dropdown menu
+.dropdown-menu {
+	box-shadow: $beets-dropdown-box-shadow;
+}
+
+// Remove caret
+.dropdown-no-caret {
+	&::after,
+	&::before {
+		display: none;
+	}
+}

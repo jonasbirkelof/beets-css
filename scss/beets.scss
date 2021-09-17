@@ -1,0 +1,113 @@
+/*!
+ * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+
+// ***********************************************************
+//
+// FUNCTIONS
+//
+// ***********************************************************
+@import "bootstrap/bootstrap-5.1.1/scss/functions";
+// ***********************************************************
+
+// ***********************************************************
+//
+// VARIABLES
+//
+// The file variables.scss imports beets-variables.scss, then
+// Bootstrap variables, then implements code that needs to be
+// added after the Bootstrap variables.
+//
+// ***********************************************************
+@import "variables";
+// @import "../assets/bootstrap-5.0.0-beta1/scss/variables"; // See variables.scss for import
+// ***********************************************************
+
+// ***********************************************************
+//
+// MIXINS
+//
+// beets-mixins.scss is an exact copy of mixins.scss but some
+// of the files included within contains changes or extra code.
+//
+// ***********************************************************
+@import "beets-mixins";
+@import "bootstrap/bootstrap-5.1.1/scss/mixins";
+// ***********************************************************
+
+// ***********************************************************
+//
+// UTILITIES
+//
+// ***********************************************************
+@import "bootstrap/bootstrap-5.1.1/scss/utilities";
+@import "beets-utilities";
+// ***********************************************************
+
+// Layout & components
+@import "bootstrap/bootstrap-5.1.1/scss/root";
+@import "bootstrap/bootstrap-5.1.1/scss/reboot";
+@import "bootstrap/bootstrap-5.1.1/scss/type";
+@import "bootstrap/bootstrap-5.1.1/scss/images";
+@import "bootstrap/bootstrap-5.1.1/scss/containers";
+@import "bootstrap/bootstrap-5.1.1/scss/grid";
+@import "bootstrap/bootstrap-5.1.1/scss/tables";
+@import "bootstrap/bootstrap-5.1.1/scss/forms";
+@import "bootstrap/bootstrap-5.1.1/scss/buttons";
+@import "bootstrap/bootstrap-5.1.1/scss/transitions";
+@import "bootstrap/bootstrap-5.1.1/scss/dropdown";
+@import "bootstrap/bootstrap-5.1.1/scss/button-group";
+@import "bootstrap/bootstrap-5.1.1/scss/nav";
+@import "bootstrap/bootstrap-5.1.1/scss/navbar";
+@import "bootstrap/bootstrap-5.1.1/scss/card";
+@import "bootstrap/bootstrap-5.1.1/scss/accordion";
+@import "bootstrap/bootstrap-5.1.1/scss/breadcrumb";
+@import "bootstrap/bootstrap-5.1.1/scss/pagination";
+@import "bootstrap/bootstrap-5.1.1/scss/badge";
+@import "bootstrap/bootstrap-5.1.1/scss/alert";
+@import "bootstrap/bootstrap-5.1.1/scss/progress";
+@import "bootstrap/bootstrap-5.1.1/scss/list-group";
+@import "bootstrap/bootstrap-5.1.1/scss/close";
+@import "bootstrap/bootstrap-5.1.1/scss/toasts";
+@import "bootstrap/bootstrap-5.1.1/scss/modal";
+@import "bootstrap/bootstrap-5.1.1/scss/tooltip";
+@import "bootstrap/bootstrap-5.1.1/scss/popover";
+@import "bootstrap/bootstrap-5.1.1/scss/carousel";
+@import "bootstrap/bootstrap-5.1.1/scss/spinners";
+@import "bootstrap/bootstrap-5.1.1/scss/offcanvas";
+
+// Helpers
+@import "bootstrap/bootstrap-5.1.1/scss/helpers";
+
+// Utilities
+@import "bootstrap/bootstrap-5.1.1/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+// ***********************************************************
+//
+// BEETS ADDITIONAL STYLING AND FUNCTIONALITY
+//
+// These files contains the variables necessary for them to 
+// work.
+//
+// ***********************************************************
+@import "beets-layout";
+
+@import "beets-reboot";
+@import "beets-forms";
+@import "beets-buttons";
+@import "beets-dropdown";
+@import "beets-card";
+@import "beets-callout";
+@import "beets-breadcrumb";
+@import "beets-alert";
+@import "beets-modal";
+@import "beets-cursor";
+// ***********************************************************

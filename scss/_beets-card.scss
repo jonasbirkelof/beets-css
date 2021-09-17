@@ -1,0 +1,85 @@
+%title {
+	letter-spacing: $headings-letter-spacing;
+	font-weight: 500;
+}
+
+//
+// Base styles
+//
+
+.card {
+	box-shadow: 0 2px 2px rgba(0,0,0,.05);
+	margin-bottom: $beets-grid-gutter-width-sm;
+
+	@include media-breakpoint-up('lg') {
+		margin-bottom: $grid-gutter-width;
+	}
+
+	> .list-group .list-group-item {
+		padding-left: $card-spacer-x;
+		padding-right: $card-spacer-x;
+	}
+}
+
+.card-title {
+	@extend %title;
+
+	& + .card-subtitle {
+		color: $text-muted;
+		margin-top: calc(-#{$card-spacer-y} + 0.5rem);
+		margin-bottom: 1rem;
+		font-weight: $font-weight-base;
+	}
+}
+
+//
+// Optional textual caps
+//
+
+.card-header {
+  	& h1, h2, h3, h4, h5, h6 {
+		@extend %title;
+		margin-bottom: 0;
+	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 54px;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 54px;
+}
+
+//
+// Card table (Beets exclusive)
+//
+
+.card-table {
+	margin-left: -#{$card-spacer-x};
+	margin-right: -#{$card-spacer-x};
+}
+
+.card-table tr th:first-child,
+.card-table tr td:first-child {
+	padding-left: $card-spacer-x;
+}
+
+.card-table tr th:last-child,
+.card-table tr td:last-child {
+	padding-right: $card-spacer-x;
+}
+
+.card-table tbody tr:last-of-type th,
+.card-table tbody tr:last-of-type td,
+.card-table tfoot tr:last-of-type th,
+.card-table tfoot tr:last-of-type td {
+	border-bottom: 0;
+}
+
+.card-table tfoot {
+	border-top: 1px solid $table-group-separator-color;;
+}
