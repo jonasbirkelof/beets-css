@@ -1,0 +1,12 @@
+//
+// Base styles
+//
+
+.alert {
+	border-radius: 0;
+	/* border: $alert-border-width solid transparent; */
+	border-left-width: 5px;
+	border-top-width: 0;
+	border-bottom-width: 0;
+	border-right-width: 0;
+}

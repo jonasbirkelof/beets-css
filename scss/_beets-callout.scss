@@ -1,0 +1,24 @@
+$beets-callout-border-left-width: 	4px;
+$beets-callout-border-color: 		$gray-200;
+$beets-callout-margin-bottom:		1rem;
+$beets-callout-padding-x: 			$spacer * 1.5;
+$beets-callout-padding-y: 			$spacer * 1.5;
+
+.callout {
+	border: $border-width solid $beets-callout-border-color;
+	border-left-width: $beets-callout-border-left-width;
+	border-radius: $border-radius;
+	margin-bottom: $beets-callout-margin-bottom;
+	padding: $beets-callout-padding-y $beets-callout-padding-x;
+}
+
+// scss-docs-start callout-modifiers
+// Generate contextual modifier classes for colorizing the callout.
+
+@each $state, $value in $theme-colors {
+	$border-color: $value;
+	.callout-#{$state} {
+	  @include callout-variant($border-color);
+	}
+  }
+  // scss-docs-end callout-modifiers

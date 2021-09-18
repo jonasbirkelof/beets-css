@@ -1,0 +1,3 @@
+@mixin nav-main-link-variant($border-color) {
+	border-left: $beets-nav-main-link-accent-width solid $border-color;
+}
