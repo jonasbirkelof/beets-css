@@ -6,12 +6,12 @@ If you have never used Bootstrap before, I strongly encurage you to try it out b
 
 ###Features:
 * Sidebar
-- Light/dark theme
-- Submenu
-- Collapsable
+    * Light/dark theme
+    * Submenu
+    * Collapsable
 * Header
-- Light/dark theme
-- Fixed on top of page or viewport
+    * Light/dark theme
+    * Fixed on top of page or viewport
 * Three custom contextual colors (via the sass files)
 * Alternative (lighter) button colors
 * Ghost button styles
