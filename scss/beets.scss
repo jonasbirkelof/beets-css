@@ -13,7 +13,7 @@
 // FUNCTIONS
 //
 // ***********************************************************
-@import "bootstrap/bootstrap-5.1.1/scss/functions";
+@import "../assets/bootstrap-5.1.1/scss/functions";
 // ***********************************************************
 
 // ***********************************************************
@@ -38,7 +38,7 @@
 //
 // ***********************************************************
 @import "beets-mixins";
-@import "bootstrap/bootstrap-5.1.1/scss/mixins";
+@import "../assets/bootstrap-5.1.1/scss/mixins";
 // ***********************************************************
 
 // ***********************************************************
@@ -46,47 +46,47 @@
 // UTILITIES
 //
 // ***********************************************************
-@import "bootstrap/bootstrap-5.1.1/scss/utilities";
+@import "../assets/bootstrap-5.1.1/scss/utilities";
 @import "beets-utilities";
 // ***********************************************************
 
 // Layout & components
-@import "bootstrap/bootstrap-5.1.1/scss/root";
-@import "bootstrap/bootstrap-5.1.1/scss/reboot";
-@import "bootstrap/bootstrap-5.1.1/scss/type";
-@import "bootstrap/bootstrap-5.1.1/scss/images";
-@import "bootstrap/bootstrap-5.1.1/scss/containers";
-@import "bootstrap/bootstrap-5.1.1/scss/grid";
-@import "bootstrap/bootstrap-5.1.1/scss/tables";
-@import "bootstrap/bootstrap-5.1.1/scss/forms";
-@import "bootstrap/bootstrap-5.1.1/scss/buttons";
-@import "bootstrap/bootstrap-5.1.1/scss/transitions";
-@import "bootstrap/bootstrap-5.1.1/scss/dropdown";
-@import "bootstrap/bootstrap-5.1.1/scss/button-group";
-@import "bootstrap/bootstrap-5.1.1/scss/nav";
-@import "bootstrap/bootstrap-5.1.1/scss/navbar";
-@import "bootstrap/bootstrap-5.1.1/scss/card";
-@import "bootstrap/bootstrap-5.1.1/scss/accordion";
-@import "bootstrap/bootstrap-5.1.1/scss/breadcrumb";
-@import "bootstrap/bootstrap-5.1.1/scss/pagination";
-@import "bootstrap/bootstrap-5.1.1/scss/badge";
-@import "bootstrap/bootstrap-5.1.1/scss/alert";
-@import "bootstrap/bootstrap-5.1.1/scss/progress";
-@import "bootstrap/bootstrap-5.1.1/scss/list-group";
-@import "bootstrap/bootstrap-5.1.1/scss/close";
-@import "bootstrap/bootstrap-5.1.1/scss/toasts";
-@import "bootstrap/bootstrap-5.1.1/scss/modal";
-@import "bootstrap/bootstrap-5.1.1/scss/tooltip";
-@import "bootstrap/bootstrap-5.1.1/scss/popover";
-@import "bootstrap/bootstrap-5.1.1/scss/carousel";
-@import "bootstrap/bootstrap-5.1.1/scss/spinners";
-@import "bootstrap/bootstrap-5.1.1/scss/offcanvas";
+@import "../assets/bootstrap-5.1.1/scss/root";
+@import "../assets/bootstrap-5.1.1/scss/reboot";
+@import "../assets/bootstrap-5.1.1/scss/type";
+@import "../assets/bootstrap-5.1.1/scss/images";
+@import "../assets/bootstrap-5.1.1/scss/containers";
+@import "../assets/bootstrap-5.1.1/scss/grid";
+@import "../assets/bootstrap-5.1.1/scss/tables";
+@import "../assets/bootstrap-5.1.1/scss/forms";
+@import "../assets/bootstrap-5.1.1/scss/buttons";
+@import "../assets/bootstrap-5.1.1/scss/transitions";
+@import "../assets/bootstrap-5.1.1/scss/dropdown";
+@import "../assets/bootstrap-5.1.1/scss/button-group";
+@import "../assets/bootstrap-5.1.1/scss/nav";
+@import "../assets/bootstrap-5.1.1/scss/navbar";
+@import "../assets/bootstrap-5.1.1/scss/card";
+@import "../assets/bootstrap-5.1.1/scss/accordion";
+@import "../assets/bootstrap-5.1.1/scss/breadcrumb";
+@import "../assets/bootstrap-5.1.1/scss/pagination";
+@import "../assets/bootstrap-5.1.1/scss/badge";
+@import "../assets/bootstrap-5.1.1/scss/alert";
+@import "../assets/bootstrap-5.1.1/scss/progress";
+@import "../assets/bootstrap-5.1.1/scss/list-group";
+@import "../assets/bootstrap-5.1.1/scss/close";
+@import "../assets/bootstrap-5.1.1/scss/toasts";
+@import "../assets/bootstrap-5.1.1/scss/modal";
+@import "../assets/bootstrap-5.1.1/scss/tooltip";
+@import "../assets/bootstrap-5.1.1/scss/popover";
+@import "../assets/bootstrap-5.1.1/scss/carousel";
+@import "../assets/bootstrap-5.1.1/scss/spinners";
+@import "../assets/bootstrap-5.1.1/scss/offcanvas";
 
 // Helpers
-@import "bootstrap/bootstrap-5.1.1/scss/helpers";
+@import "../assets/bootstrap-5.1.1/scss/helpers";
 
 // Utilities
-@import "bootstrap/bootstrap-5.1.1/scss/utilities/api";
+@import "../assets/bootstrap-5.1.1/scss/utilities/api";
 // scss-docs-end import-stack
 
 
@@ -98,6 +98,8 @@
 // work.
 //
 // ***********************************************************
+// @import "beets-fontawesome";
+
 @import "beets-layout";
 
 @import "beets-reboot";

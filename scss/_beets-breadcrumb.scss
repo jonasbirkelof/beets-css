@@ -18,11 +18,12 @@ $beets-breadcrumb-font-weight:			$fa-font-weight;
 	}
 
 	// The separator between breadcrumbs (by default, a forward-slash: "/")
-	+ .breadcrumb-item {
-		&::before {
-			font-family: $beets-breadcrumb-font-family;
-			font-weight: $beets-breadcrumb-font-weight;
-			margin-top: -1px; // Font Awesome icon calibration
-		}
-	}
+	// + .breadcrumb-item {
+
+	// 	&::before {
+	// 		font-family: $beets-breadcrumb-font-family;
+	// 		font-weight: $beets-breadcrumb-font-weight;
+	// 		margin-top: -1px; // Font Awesome icon calibration
+	// 	}
+	// }
 }
