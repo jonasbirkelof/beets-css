@@ -9,6 +9,8 @@ Bootstrap is open source and because of that Beets CSS is also open source. On t
 
 ## Instructions
 
+Beets CSS 2.0 is developed using **Bootstrap version 5.2.2** so make sure you have at least that version installed!
+
 Please visit the documentations site for instruction on how to install, customize and use Beets CSS.
 
 [Beets CSS Documentation](https://jonasbirkelof.github.io/beets-css/latest)
