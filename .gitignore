@@ -1,2 +1,5 @@
-.git
-*.code-workspace
+dist/css/app.css
+dist/js/app.js
+node_modules/
+package-lock.json
+webpack.mix.js

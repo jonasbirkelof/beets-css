@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/css/beets.css">
+    <title>Beets CSS Dev</title>
+</head>
+<body class="bg-light">
+
+    <div class="container pt-3 px-5 bg-white bg-dark">
+
+		<h1 class="my-5">Beets CSS</h1>
+
+		<h2 class="mt-5 border-bottom pb-3">Breadcrumb</h2>
+
+		<p>Styling of the links.</p>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="#">Home</a></li>
+			  <li class="breadcrumb-item"><a href="#">Library</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">Data</li>
+			</ol>
+		  </nav>
+
+		<h2 class="mt-5 border-bottom pb-3">Buttons</h2>
+		
+		<h3 class="h4">Ghost</h3>
+		<p><code>.btn-ghost-{theme-color}</code></p>
+		<button class="btn btn-ghost-primary">Primary</button>
+		<button class="btn btn-ghost-secondary">Secondary</button>
+		<button class="btn btn-ghost-success">Success</button>
+		<button class="btn btn-ghost-warning">Warning</button>
+		<button class="btn btn-ghost-danger">Danger</button>
+		<button class="btn btn-ghost-info">Info</button>
+		<button class="btn btn-ghost-light">Light</button>
+		<button class="btn btn-ghost-dark">Dark</button>
+		<div class="bg-dark">
+		<button class="btn btn-ghost-primary">Primary</button>
+		<button class="btn btn-ghost-secondary">Secondary</button>
+		<button class="btn btn-ghost-success">Success</button>
+		<button class="btn btn-ghost-warning">Warning</button>
+		<button class="btn btn-ghost-danger">Danger</button>
+		<button class="btn btn-ghost-info">Info</button>
+		<button class="btn btn-ghost-light">Light</button>
+		<button class="btn btn-ghost-dark">Dark</button>
+		</div>
+        
+		<h3 class="h4 mt-4">Alternative</h3>
+		<p><code>.btn-alt-{theme-color}</code></p>
+		<button class="btn btn-alt-primary">Primary</button>
+		<button class="btn btn-alt-secondary">Secondary</button>
+		<button class="btn btn-alt-success">Success</button>
+		<button class="btn btn-alt-warning">Warning</button>
+		<button class="btn btn-alt-danger">Danger</button>
+		<button class="btn btn-alt-info">Info</button>
+		<button class="btn btn-alt-light">Light</button>
+		<button class="btn btn-alt-dark">Dark</button>
+		<div class="bg-dark">
+		<button class="btn btn-alt-primary">Primary</button>
+		<button class="btn btn-alt-secondary">Secondary</button>
+		<button class="btn btn-alt-success">Success</button>
+		<button class="btn btn-alt-warning">Warning</button>
+		<button class="btn btn-alt-danger">Danger</button>
+		<button class="btn btn-alt-info">Info</button>
+		<button class="btn btn-alt-light">Light</button>
+		<button class="btn btn-alt-dark">Dark</button>
+		</div>
+		
+		<h3 class="h4 mt-4">Square button</h3>		
+		<p><code>.btn-aspect</code></p>
+		<p><code>.btn-aspect-{sm|md|lg|xl}</code> for screens ≥576px, ≥768px, ≥992px and ≥1220px.</p>
+		<button class="btn btn-primary btn-square btn-lg">J</button>
+		<button class="btn btn-primary btn-square">J</button>
+		<button class="btn btn-primary btn-square btn-sm">J</button>
+		<button class="btn btn-primary btn-square "><i class="fa-solid fa-times"></i></button>
+		<a href="#" class="btn btn-primary btn-square"><i class="fa-solid fa-times"></i></a>
+		<button class="btn btn-primary btn-square rounded-circle"><i class="fa-solid fa-pen"></i></button>
+		<button class="btn btn-primary btn-square btn-sm"><i class="fa-solid fa-user fa-sm"></i></button>
+		<button class="btn btn-primary btn-square"><i class="fa-solid fa-user"></i></button>
+		<button class="btn btn-primary btn-square btn-lg"><i class="fa-solid fa-user fa-lg"></i></button>
+
+		<h2 class="mt-5 border-bottom pb-3">Callout</h2>
+
+		<h3 class="h4">Types</h3>
+		<p>The callout has a wrapper (<code>.callout</code>), header (<code>.callout-header</code>) and body (<code>.callout-body</code>).</p>
+		<p>Place an icon (fontawesome) inside the header or body inside a div with <code>.callout-icon</code> to give it the right styling.</p>
+		<div class="callout callout-primary">
+			<div class="callout-header">
+				<div class="callout-icon"><i class="fa-solid fa-info-circle"></i></div>
+				Header
+			</div>
+			<div class="callout-body">
+				Body
+			</div>
+		</div>
+		<div class="callout callout-primary">
+			<div class="callout-header">
+				<div class="callout-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+				Header
+			</div>
+		</div>
+		<div class="callout callout-primary">
+			<div class="callout-body d-flex justify-content-start">
+				<div class="callout-icon"><i class="fa-solid fa-arrow-right"></i></div>
+				Body
+			</div>
+		</div>
+		<div class="callout callout-primary">
+			<div class="callout-header">
+				Header
+			</div>
+			<div class="callout-body">
+				Body
+			</div>
+		</div>
+
+		<h3 class="h4">Colors</h3>
+		<div class="row g2">
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="callout callout-primary">
+					<div class="callout-body">
+						Primary
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="callout callout-secondary">
+					<div class="callout-body">
+						Secondary
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="callout callout-success">
+					<div class="callout-body">
+						Success
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="callout callout-warning">
+					<div class="callout-body">
+						Warning
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="callout callout-danger">
+					<div class="callout-body">
+						Danger
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="callout callout-info">
+					<div class="callout-body">
+						Info
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="callout callout-light">
+					<div class="callout-body">
+						Light
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="callout callout-dark">
+					<div class="callout-body">
+						Dark
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="mt-5 border-bottom pb-3">Card</h2>
+
+		<h3 class="h4 mt-4">Styling</h3>
+		<p>The padding of the card is a little bigger and some small changes has been made to the header, footer and subtitle.</p>
+		<div class="card mb-2" style="width: 320px;">
+			<div class="card-header">Header</div>
+			<div class="card-body">
+				<h3 class="card-title">Card title</h3>
+				<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+			<div class="card-footer">Footer</div>
+		</div>
+
+		<h3 class="h4 mt-4">Card table</h3>
+		<p>Inside the <code>.card-body</code>, wrap a <code>&lt;table&gt;</code> with a div with <code>.card-table</code> to make the table flush inside the card.</p>
+		<div class="card">
+			<div class="card-body py-0">			
+				<div class="card-table">
+					<table class="table mb-0">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>1</th>
+								<th>2</th>
+								<th>3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>A</td>
+								<td>A</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>B</td>
+								<td>B</td>
+								<td>B</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>			
+			</div>
+		</div>
+
+		<h2 class="mt-5 border-bottom pb-3">Cursor</h2>
+
+		<p>Hover over the boxes to see the cursors.</p>
+		<div class="row g-2">
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-crosshair">.cursor-crosshair</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-default">.cursor-default</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-help">.cursor-help</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-initial">.cursor-initial</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-move">.cursor-move</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-none">.cursor-none</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-not-allowed">.cursor-not-allowed</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-pointer">.cursor-pointer</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-progress">.cursor-progress</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-text">.cursor-text</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-wait">.cursor-wait</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-zoom-in">.cursor-zoom-in</div></div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3"><div class="bg-light border rounded mb-1 p-2 cursor-zoom-out">.cursor-zoom-out</div></div>
+		</div>
+
+		<h2 class="mt-5 border-bottom pb-3">Dropdown</h2>
+
+		<h3 class="h4 mt-4">Dropdown menu</h3>
+		<p>The <code>dropdown-menu</code> in Beets has a shadow.</p>
+		<div class="btn-group m1">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown button
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h3 class="h4 mt-4">No caret</h3>
+		<p>Remove the dropdown caret with <code>.dropdown-no-caret</code> on the button class.</p>		
+		<div class="btn-group m1">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-no-caret dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown button
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
+			</div>
+		</div>
+		<p class="mt-3">Add a custom caret after the button label.</p>
+		<div class="btn-group m1">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-no-caret dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown button
+					<i class="fa-solid fa-sm fa-chevron-down ms-1"></i>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h2 class="mt-5 border-bottom pb-3">Forms</h2>
+
+		<h3 class="h4 mt-4">Checkbox, radio and switch theme colors</h3>
+		<p><code>.form-check-{theme-color}</code></p>
+		<div class="form-check form-check-inline form-check-primary">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" checked>
+			<label class="form-check-label" for="inlineCheckbox1">Primary</label>
+		</div>
+		<div class="form-check form-check-inline form-check-secondary">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked>
+			<label class="form-check-label" for="inlineCheckbox2">Secondary</label>
+		</div>
+		<div class="form-check form-check-inline form-check-success">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked>
+			<label class="form-check-label" for="inlineCheckbox3">Success</label>
+		</div>
+		<div class="form-check form-check-inline form-check-warning">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked>
+			<label class="form-check-label" for="inlineCheckbox4">Warning</label>
+		</div>
+		<div class="form-check form-check-inline form-check-danger">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked>
+			<label class="form-check-label" for="inlineCheckbox5">Danger</label>
+		</div>
+		<div class="form-check form-check-inline form-check-info">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox6" checked>
+			<label class="form-check-label" for="inlineCheckbox6">Info</label>
+		</div>
+		<div class="form-check form-check-inline form-check-light">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox7" checked>
+			<label class="form-check-label" for="inlineCheckbox7">Light</label>
+		</div>
+		<div class="form-check form-check-inline form-check-dark">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox8" checked>
+			<label class="form-check-label" for="inlineCheckbox8">Dark</label>
+		</div>
+
+		<br>
+
+		<div class="form-check form-check-inline form-check-primary">
+			<input class="form-check-input" type="radio" id="inlineRadio1" name="inlineRadio1" checked>
+			<label class="form-check-label" for="inlineRadio1">Primary</label>
+		</div>
+		<div class="form-check form-check-inline form-check-secondary">
+			<input class="form-check-input" type="radio" id="inlineRadio2" name="inlineRadio2" checked>
+			<label class="form-check-label" for="inlineRadio2">Secondary</label>
+		</div>
+		<div class="form-check form-check-inline form-check-success">
+			<input class="form-check-input" type="radio" id="inlineRadio3" name="inlineRadio3" checked>
+			<label class="form-check-label" for="inlineRadio3">Success</label>
+		</div>
+		<div class="form-check form-check-inline form-check-warning">
+			<input class="form-check-input" type="radio" id="inlineRadio4" name="inlineRadio4" checked>
+			<label class="form-check-label" for="inlineRadio4">Warning</label>
+		</div>
+		<div class="form-check form-check-inline form-check-danger">
+			<input class="form-check-input" type="radio" id="inlineRadio5" name="inlineRadio5" checked>
+			<label class="form-check-label" for="inlineRadio5">Danger</label>
+		</div>
+		<div class="form-check form-check-inline form-check-info">
+			<input class="form-check-input" type="radio" id="inlineRadio6" name="inlineRadio6" checked>
+			<label class="form-check-label" for="inlineRadio6">Info</label>
+		</div>
+		<div class="form-check form-check-inline form-check-light">
+			<input class="form-check-input" type="radio" id="inlineRadio7" name="inlineRadio7" checked>
+			<label class="form-check-label" for="inlineRadio7">Light</label>
+		</div>
+		<div class="form-check form-check-inline form-check-dark">
+			<input class="form-check-input" type="radio" id="inlineRadio8" name="inlineRadio8" checked>
+			<label class="form-check-label" for="inlineRadio8">Dark</label>
+		</div>
+
+		<br>
+		  
+		<div class="form-check form-switch form-check-inline form-check-primary">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" checked>
+			<label class="form-check-label" for="inlineCheckbox1">Primary</label>
+		</div>
+		<div class="form-check form-switch form-check-inline form-check-secondary">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked>
+			<label class="form-check-label" for="inlineCheckbox2">Secondary</label>
+		</div>
+		<div class="form-check form-switch form-check-inline form-check-success">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked>
+			<label class="form-check-label" for="inlineCheckbox3">Success</label>
+		</div>
+		<div class="form-check form-switch form-check-inline form-check-warning">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked>
+			<label class="form-check-label" for="inlineCheckbox4">Warning</label>
+		</div>
+		<div class="form-check form-switch form-check-inline form-check-danger">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked>
+			<label class="form-check-label" for="inlineCheckbox5">Danger</label>
+		</div>
+		<div class="form-check form-switch form-check-inline form-check-info">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox6" checked>
+			<label class="form-check-label" for="inlineCheckbox6">Info</label>
+		</div>
+		<div class="form-check form-switch form-check-inline form-check-light">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox7" checked>
+			<label class="form-check-label" for="inlineCheckbox7">Light</label>
+		</div>
+		<div class="form-check form-switch form-check-inline form-check-dark">
+			<input class="form-check-input" type="checkbox" id="inlineCheckbox8" checked>
+			<label class="form-check-label" for="inlineCheckbox8">Dark</label>
+		</div>
+		
+		<h2 class="mt-5 border-bottom pb-3">Modal</h2>
+
+		<p>Just some basic styling, like cards. For instance, a little wider padding-x on the body, header and footer and a shadow.</p>
+		<p>The last <code>&lt;p&gt;</code> tag in the body will have <code>margin-bottom: 0;</code> automaticlly. You can add <code>.mb-3</code> to the last <code>&lt;p&gt;</code> tag to bypass this.</p>
+		<div class="modal p-7" style="display: block; position: initial;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Modal title</h5>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<p>Modal body text goes here.</p>
+						<p>Modal body text goes here.</p>
+					</div>
+					<div class="modal-footer justify-content-between">
+						<button class="btn btn-primary">Save changes</button>
+						<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="mt-5 border-bottom pb-3">Spacers</h2>
+
+		<ul>
+			<li>The spacers <code>1</code>-<code>4</code> are the same as the Bootstrap default values</li>
+			<li><code>5</code> is set to the gutter width (30px)</li>
+			<li><code>6</code> is the original bootstrap value for <code>5</code></li>
+			<li><code>7</code> and <code>8</code> are added for more variations</li>
+		</ul>
+		<div class="p-1 bg-light border rounded mb-1">padding-1 (bs original)</div>
+		<div class="p-2 bg-light border rounded mb-1">padding-2 (bs original)</div>
+		<div class="p-3 bg-light border rounded mb-1">padding-3 (bs original)</div>
+		<div class="p-4 bg-light border rounded mb-1">padding-4 (bs original)</div>
+		<div class="p-5 bg-light border rounded mb-1">padding-5 (gutter-width, 30px)</div>
+		<div class="p-6 bg-light border rounded mb-1">padding-6 (spacer * 3, bs 5)</div>
+		<div class="p-7 bg-light border rounded mb-1">padding-7 (spacer * 4)</div>
+		<div class="p-8 bg-light border rounded mb-1">padding-8 (spacer * 5)</div>
+
+    </div>
+	
+	<script src="./dist/js/app.js"></script>
+</body>
+</html>

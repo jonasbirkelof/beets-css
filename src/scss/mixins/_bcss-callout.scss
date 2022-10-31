@@ -1,0 +1,16 @@
+@mixin callout-variant(
+	$theme-color,
+	$border-color: $theme-color,
+	$icon-color: $theme-color,
+	$header-bg-color: tint-color($theme-color, 90%),
+	) {
+	border-left-color: $border-color;
+
+	.callout-header {
+		background-color: $header-bg-color;
+	}
+
+	.callout-icon {
+		color: $icon-color;
+	}
+}
