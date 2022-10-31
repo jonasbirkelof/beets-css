@@ -5,20 +5,11 @@
 
 @mixin button-alt-variant(
 	$theme-color,
-	// $color: shade-color($theme-color, 60%),
-	// $color: shift-color($theme-color, 20%),
-	// $color: color-contrast-bcss($theme-color),
-	// $color: black,
 	$color: $theme-color,
-	// $color-active: shade-color($theme-color, 60%),
 	$color-active: $theme-color,
-	// $color-hover: shade-color($theme-color, 60%),
 	$color-hover: $theme-color,
-	// $bg-color: tint-color($theme-color, 80%),
 	$bg-color: #{$theme-color}1c,
-	// $bg-color-active: tint-color($theme-color, 65%),
 	$bg-color-active: #{$theme-color}36,
-	// $bg-color-hover: tint-color($theme-color, 70%),
 	$bg-color-hover: #{$theme-color}2b,
 ) {
 	color: $color;
@@ -56,7 +47,6 @@
 	$theme-color,
 	$color-hover: color-contrast($theme-color),
 	$bg-color-active: tint-color($theme-color, 85%),
-	// $bg-color-hover: tint-color($theme-color, 90%),
 	$bg-color-hover: #{$theme-color}1c,
 ) {
 	color: $theme-color;

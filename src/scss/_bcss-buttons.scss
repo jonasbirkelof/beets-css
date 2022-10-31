@@ -1,6 +1,3 @@
-// $beets-btn-aspect-font-size-sm: 		$beets-btn-font-size-sm;
-// $beets-btn-aspect-font-size-lg: 		$beets-btn-font-size-lg;
-
 $beets-btn-aspect-height:				38px; // Regular button height
 $beets-btn-aspect-height-sm:			31px; // Small button height
 $beets-btn-aspect-height-lg:			48px; // Large button height
@@ -26,11 +23,6 @@ $beets-btn-aspect-height-lg:			48px; // Large button height
 @each $color, $value in $theme-colors {
 	.btn-ghost-#{$color} {
 		@include button-ghost-variant($value);
-		// @if $color == light {
-		// 	@include button-ghost-variant(shade-color($value, 10%));
-		// } @else {
-		// 	@include button-ghost-variant($value);
-		// }
 	}
 }
 
