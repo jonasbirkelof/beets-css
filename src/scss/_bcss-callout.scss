@@ -1,0 +1,47 @@
+// $bcss-callout-border-left-width: 	4px;
+$bcss-callout-border-left-width: 	$border-radius;
+$bcss-callout-border-color: 		$gray-200;
+// $bcss-callout-border-radius: 		4px;
+$bcss-callout-border-radius: 		$border-radius;
+$bcss-callout-border-radius-inner:	4px; /* $bcss-callout-border-radius - 1px */
+$bcss-callout-margin-bottom:		1rem;
+$bcss-callout-padding-x: 			$spacer;
+$bcss-callout-padding-y: 			$spacer;
+$bcss-callout-icon-gutter:			$spacer;
+
+.callout {
+	background-color: white;
+	border: $border-width solid $bcss-callout-border-color;
+	border-left-width: $bcss-callout-border-left-width;
+	border-radius: $bcss-callout-border-radius;
+	margin-bottom: $bcss-callout-margin-bottom;	
+}
+
+// scss-docs-start callout-modifiers
+// Generate contextual modifier classes for colorizing the callout.
+@each $color, $value in $theme-colors {
+	.callout-#{$color} {
+		@if $color == light {
+			@include callout-variant(shade-color($value, 20%));
+		} @else {
+			@include callout-variant($value);
+		}
+	}
+}
+// scss-docs-end callout-modifiers
+
+.callout-header {
+	display: flex;
+	justify-content: left;
+	font-weight: 600;
+	padding: $bcss-callout-padding-y/2 $bcss-callout-padding-x;
+	border-top-right-radius: $bcss-callout-border-radius-inner;
+}
+
+.callout-icon {
+	margin-right: $bcss-callout-icon-gutter;
+}
+
+.callout-body {
+	padding: $bcss-callout-padding-y $bcss-callout-padding-x;
+}

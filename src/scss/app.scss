@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+$bg-color: teal;
+
+body {
+    background-color: $bg-color;
+
+    & h1 {
+        @apply text-white;
+        @apply text-center;
+    }
+}

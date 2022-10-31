@@ -1,0 +1,93 @@
+site_name: Beets CSS
+site_url: https://jonasbirkelof.github.io/beets-css
+repo_url: https://github.com/jonasbirkelof/beets-css
+repo_name: jonasbirkelof/beets-css
+edit_uri: ""
+theme:
+  name: material
+  custom_dir: overrides/
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: assets/images/beets_col_inv_100x313.png
+  favicon: assets/images/beets_icon_col_250x250.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.highlight
+extra_css:
+  - assets/stylesheets/custom.css
+extra_javascript:
+  # - assets/javascripts/beets.js
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+nav:
+  - Home:
+    - index.md
+  - Getting started: 
+    - Installation: getting-started/installation.md
+  - Documentation: 
+    - docs/index.md
+    - Forms:
+      - Checks and radios: docs/forms/checks-and-radios.md
+    - Components:
+      - Breadcrumb: docs/components/breadcrumb.md
+      - Buttons: docs/components/buttons.md
+      - Callout: docs/components/callout.md
+      - Card: docs/components/card.md
+      - Dropdowns: docs/components/dropdowns.md
+      - Modal: docs/components/modal.md
+    - Utilities:
+      - Colors: docs/utilities/colors.md
+      - Cursor: docs/utilities/cursor.md
+      - Spacing: docs/utilities/spacing.md
+  - Download: https://github.com/jonasbirkelof/beets-css
+plugins:
+  - search
+  - mike:
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jonasbirkelof/beets-css
+      name: Beets CSS on GitHub
+copyright: Copyright &copy; 2022 Jonas Birkel&ouml;f
