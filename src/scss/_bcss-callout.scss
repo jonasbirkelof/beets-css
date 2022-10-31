@@ -1,9 +1,7 @@
-// $bcss-callout-border-left-width: 	4px;
 $bcss-callout-border-left-width: 	$border-radius;
 $bcss-callout-border-color: 		$gray-200;
-// $bcss-callout-border-radius: 		4px;
 $bcss-callout-border-radius: 		$border-radius;
-$bcss-callout-border-radius-inner:	4px; /* $bcss-callout-border-radius - 1px */
+$bcss-callout-border-radius-inner:	4px; // $bcss-callout-border-radius - 1px
 $bcss-callout-margin-bottom:		1rem;
 $bcss-callout-padding-x: 			$spacer;
 $bcss-callout-padding-y: 			$spacer;
