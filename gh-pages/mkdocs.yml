@@ -21,15 +21,16 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  logo: assets/images/beets_col_inv_100x313.png
+  logo: assets/images/beets_css_col_inv_100x478.png
+  # logo: assets/images/beets_icon_col_250x250.png
   favicon: assets/images/beets_icon_col_250x250.png
   icon:
     repo: fontawesome/brands/github
   features:
     - navigation.indexes
     - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - toc.follow
@@ -53,12 +54,10 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - tables
 nav:
-  - Home:
-    - index.md
-  - Getting started: 
-    - Installation: getting-started/installation.md
+  - Home: index.md
+  - Getting started: getting-started/index.md
+  - Download: https://github.com/jonasbirkelof/beets-css
   - Documentation: 
-    - docs/index.md
     - Forms:
       - Checks and radios: docs/forms/checks-and-radios.md
     - Components:
@@ -72,7 +71,6 @@ nav:
       - Colors: docs/utilities/colors.md
       - Cursor: docs/utilities/cursor.md
       - Spacing: docs/utilities/spacing.md
-  - Download: https://github.com/jonasbirkelof/beets-css
 plugins:
   - search
   - mike:

@@ -26,6 +26,14 @@
 .md-header__topic {
 	display: none;
 }
+/* Re-order hamburger menu */
+nav.md-header__inner > label[for="__drawer"] {
+	order: -1;
+}
+/* Show logo in header on small screens */
+nav.md-header__inner > .md-logo {
+	display: block;
+}
 /* Navigation logo styling */
 .md-header__button.md-logo {
 	padding-top: 0;
