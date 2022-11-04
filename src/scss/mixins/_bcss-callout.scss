@@ -1,16 +1,29 @@
-@mixin callout-variant(
-	$theme-color,
-	$border-color: $theme-color,
-	$icon-color: $theme-color,
-	$header-bg-color: tint-color($theme-color, 90%),
-	) {
-	border-left-color: $border-color;
+@mixin callout-variant($values) {
+	$color: nth($values, 1);
+	$bs-icon: nth($values, 2);
+	$fa-icon: nth($values, 3);
+
+	background-color: rgba($color, $bcss-callout-bg-opacity);
 
 	.callout-header {
-		background-color: $header-bg-color;
+		color: $color;
 	}
 
-	.callout-icon {
-		color: $icon-color;
+	// Icon styling	
+	.callout-header::before {
+		background-image: $fa-icon;
+	}
+	
+	// Bootstrap icons
+	&.callout-bs-icon .callout-header::before {
+		background-image: $bs-icon;
+	}
+
+	// No icon
+	&.callout-no-icon .callout-header::before {
+		margin: 0;
+		width: 0;
+		height: 0;
+		background-image: none;
 	}
 }
