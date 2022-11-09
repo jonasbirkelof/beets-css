@@ -4,7 +4,7 @@
   <head>
     
   <link rel="stylesheet" href="../../../assets/stylesheets/bootstrap.min.css">
-  <link rel="stylesheet" href="../../../assets/stylesheets/beets.css">
+  <link rel="stylesheet" href="../../../assets/stylesheets/css/beets.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
@@ -469,15 +469,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#styling" class="md-nav__link">
-    Styling
+  <a href="#icons" class="md-nav__link">
+    Icons
   </a>
+  
+    <nav class="md-nav" aria-label="Icons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap-icons" class="md-nav__link">
+    Bootstrap icons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#icons" class="md-nav__link">
-    Icons
+  <a href="#styling" class="md-nav__link">
+    Styling
   </a>
   
 </li>
@@ -670,15 +683,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#styling" class="md-nav__link">
-    Styling
+  <a href="#icons" class="md-nav__link">
+    Icons
   </a>
+  
+    <nav class="md-nav" aria-label="Icons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap-icons" class="md-nav__link">
+    Bootstrap icons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#icons" class="md-nav__link">
-    Icons
+  <a href="#styling" class="md-nav__link">
+    Styling
   </a>
   
 </li>
@@ -715,195 +741,259 @@
 <style>
 .callout {
     border-radius: 6px;
-    border-left-width: 6px;
     font-size: 16px;
+    padding: 16px 24px;
 }
-.callout-header {
-    padding: 8px 16px;
+.callout-header + .callout-body {
+    padding-top: 8px;
 }
-.callout-body {
-    padding: 16px;
-}
-.callout-icon {
+.callout-header::before {
     margin-right: 16px;
+    height: 16px;
+    width: 16px;
+}
+.me-3 {
+    margin-right: 16px !important;
 }
 </style>
 
 <h1 id="callout">Callout</h1>
-<p>A callout can be used as a short information notice. Unlike the Bootstrap alert, this is not meant to call for the users attention when an action has happened.</p>
-<p>The callout has a parent class <code>.callout</code> and two child classes: <code>.callout-header</code> and <code>.callout-body</code>.</p>
+<p>A callout can be used as a short information notice. Unlike the Bootstrap alert, this is not meant to call for the users attention when an action has happened. The icons are automaticlly populated within the header.</p>
+<p>The callout has a parent class <code>.callout</code> and two child classes: <code>.callout-header</code> and <code>.callout-body</code>. </p>
+<p>The <code>.callout</code> class has two config classes; a styling class and an icon class.</p>
 <div class="demo">
-    <div class="callout callout-primary text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-info-circle"></i></div>
-            Header
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-    <div class="callout callout-primary text-dark mb-0">
+    <div class="callout callout-note">
         <div class="callout-header">Header</div>
-        <div class="callout-body">
-            Body
-        </div>
+        <div class="callout-body">Body</div>
+    </div>
+    <div class="callout callout-note callout-no-icon mb-0">
+        <div class="callout-header">Header</div>
+        <div class="callout-body">Body</div>
     </div>
 </div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-primary&quot;</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-icon&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fa-solid fa-info-circle&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        Header
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        Header
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-body&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        Body
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-body&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        Body
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-primary&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-body&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        Body
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<h2 id="styling">Styling</h2>
-<p>You can use all of the Bootstrap theme colors with the callout. Just add the <code>.callout-{theme-color}</code> class to the parent <code>.callout</code> class to style it.</p>
-<div class="demo">
-    <div class="callout callout-primary text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-question-circle"></i></div>
-            Primary
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-    <div class="callout callout-secondary text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-quote-right"></i></div>
-            Secondary
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-    <div class="callout callout-success text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-check"></i></div>
-            Success
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-    <div class="callout callout-warning text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-exclamation-triangle"></i></div>
-            Warning
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-    <div class="callout callout-danger text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-bolt"></i></div>
-            Danger
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-    <div class="callout callout-info text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-info-circle"></i></div>
-            Info
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-    <div class="callout callout-light text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-heart"></i></div>
-            Light
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-    <div class="callout callout-dark text-dark mb-0">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-pen"></i></div>
-            Dark
-        </div>
-        <div class="callout-body">
-            Body
-        </div>
-    </div>
-</div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-primary&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-secondary&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-success&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-warning&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-danger&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-info&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-light&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-dark&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note callout-no-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        Header
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-body&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        Body
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="icons">Icons</h2>
-<p>Tha callout has an <code>.callout-icon</code> class that can wrap an icon to give it a right margin. It can be used in the <code>.callout-header</code> and <code>.callout-body</code>.</p>
-<h2 id="header">Header</h2>
-<p>The header background has a lighter version of the theme color. You can use the header without the body if you just want a quick info with some coloring.</p>
+<p>Every callout style has a complimentary icon that is automaticlly added to the <code>::before</code> pseudo-element of <code>.callout-header</code>. The icons that are used are svg's from the free version of Font awesome.</p>
+<p>You can remove the icon using the <code>.callout-no-icon</code> class. This makes it possible to add a custom icon.</p>
 <div class="demo">
-    <div class="callout callout-primary text-dark">
-        <div class="callout-header">
-            <div class="callout-icon"><i class="fa-solid fa-info-circle"></i></div>
-            Header
-        </div>
+    <div class="callout callout-note">
+        <div class="callout-header">Default icon</div>
+    </div>
+    <div class="callout callout-note callout-no-icon">
+        <div class="callout-header">No icon</div>
+    </div>
+    <div class="callout callout-note callout-no-icon mb-0">
+        <div class="callout-header"><i class="fa-solid fa-heart me-3"></i>Custom icon</div>
+    </div>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        Default icon
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note callout-no-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        No icon
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note callout-no-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>        <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fa-solid fa-heart me-3&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>Custom icon
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="bootstrap-icons">Bootstrap icons</h3>
+<p>If you prefer lighter icons you can use the <code>.callout-bs-icons</code> to change out the Font awesome icons to Bootstrap icons. See the different icons under Styles below.</p>
+<div class="demo">
+    <div class="callout callout-note callout-bs-icon mb-0">
+        <div class="callout-header">Bootstrap icon</div>
+    </div>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note callout-bs-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        Bootstrap icon
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="styling">Styling</h2>
+<p>To style the callout you add a <code>.callout-{type}</code> class. All classes are listed below.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Proper support for Boostrap theme colors will come later</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Default (Font awesome) icons</label><label for="__tabbed_1_2">Bootstrap icons</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="demo" markdown>
+    <div class="callout callout-note mb-1">
+        <div class="callout-header">Note</div>
+    </div>
+    <div class="callout callout-summary mb-1">
+        <div class="callout-header">Summary</div>
+    </div>
+    <div class="callout callout-info mb-1">
+        <div class="callout-header">Info</div>
+    </div>
+    <div class="callout callout-todo mb-1">
+        <div class="callout-header">Todo</div>
+    </div>
+    <div class="callout callout-tip mb-1">
+        <div class="callout-header">Tip</div>
+    </div>
+    <div class="callout callout-success mb-1">
+        <div class="callout-header">Success</div>
+    </div>
+    <div class="callout callout-question mb-1">
+        <div class="callout-header">Question</div>
+    </div>
+    <div class="callout callout-warning mb-1">
+        <div class="callout-header">Warning</div>
+    </div>
+    <div class="callout callout-failure mb-1">
+        <div class="callout-header">Failure</div>
+    </div>
+    <div class="callout callout-danger mb-1">
+        <div class="callout-header">Danger</div>
+    </div>
+    <div class="callout callout-bug mb-1">
+        <div class="callout-header">Bug</div>
+    </div>
+    <div class="callout callout-example mb-1">
+        <div class="callout-header">Example</div>
+    </div>
+    <div class="callout callout-quote mb-0">
+        <div class="callout-header">Quote</div>
+    </div>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-summary&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-info&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-todo&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-tip&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-success&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-question&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-warning&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-failure&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-danger&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bug&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-example&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-quote&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<p><div class="demo" markdown>
+    <div class="callout callout-note callout-bs-icon mb-1">
+        <div class="callout-header">Note</div>
+    </div>
+    <div class="callout callout-summary callout-bs-icon mb-1">
+        <div class="callout-header">Summary</div>
+    </div>
+    <div class="callout callout-info callout-bs-icon mb-1">
+        <div class="callout-header">Info</div>
+    </div>
+    <div class="callout callout-todo callout-bs-icon mb-1">
+        <div class="callout-header">Todo</div>
+    </div>
+    <div class="callout callout-tip callout-bs-icon mb-1">
+        <div class="callout-header">Tip</div>
+    </div>
+    <div class="callout callout-success callout-bs-icon mb-1">
+        <div class="callout-header">Success</div>
+    </div>
+    <div class="callout callout-question callout-bs-icon mb-1">
+        <div class="callout-header">Question</div>
+    </div>
+    <div class="callout callout-warning callout-bs-icon mb-1">
+        <div class="callout-header">Warning</div>
+    </div>
+    <div class="callout callout-failure callout-bs-icon mb-1">
+        <div class="callout-header">Failure</div>
+    </div>
+    <div class="callout callout-danger callout-bs-icon mb-1">
+        <div class="callout-header">Danger</div>
+    </div>
+    <div class="callout callout-bug callout-bs-icon mb-1">
+        <div class="callout-header">Bug</div>
+    </div>
+    <div class="callout callout-example callout-bs-icon mb-1">
+        <div class="callout-header">Example</div>
+    </div>
+    <div class="callout callout-quote callout-bs-icon mb-0">
+        <div class="callout-header">Quote</div>
+    </div>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-note&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-summary&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-info&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-todo&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-tip&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-success&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-question&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-warning&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-failure&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-danger&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-bug&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-example&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-bs-icon callout-quote&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+</div>
+</div>
+<h2 id="header">Header</h2>
+<p>You can use the header without the body if you just want a quick info with some coloring.</p>
+<div class="demo">
+    <div class="callout callout-note">
+        <div class="callout-header">Header</div>
     </div>  
-    <div class="callout callout-primary text-dark mb-0">
+    <div class="callout callout-note callout-no-icon mb-0">
         <div class="callout-header">Header</div>
     </div>
 </div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-primary&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fa-solid fa-info-circle&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        Header
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>  
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-primary&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        Header
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>  
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note callout-no-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        Header
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="body">Body</h2>
 <p>The body can contain the information you want to communicate. It can be used without the header for a more compact style, and of course with an icon.</p>
 <div class="demo">
-    <div class="callout callout-primary text-dark">
-        <div class="callout-body d-flex justify-content-start">
-            <div class="callout-icon"><i class="fa-solid fa-arrow-right"></i></div>
-            Body
-        </div>
-    </div>
-    <div class="callout callout-primary text-dark mb-0">
+    <div class="callout callout-note mb-0">
         <div class="callout-body">
             Body
         </div>
     </div>
 </div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-primary&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fa-solid fa-info-circle&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        Header
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>  
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-primary&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-header&quot;</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout callout-note&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;callout-body&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        Body
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>  
 </code></pre></div>
 
 

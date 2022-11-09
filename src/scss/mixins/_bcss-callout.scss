@@ -18,12 +18,4 @@
 	&.callout-bs-icon .callout-header::before {
 		background-image: $bs-icon;
 	}
-
-	// No icon
-	&.callout-no-icon .callout-header::before {
-		margin: 0;
-		width: 0;
-		height: 0;
-		background-image: none;
-	}
 }
