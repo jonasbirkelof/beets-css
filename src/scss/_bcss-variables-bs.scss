@@ -1,15 +1,15 @@
-/*
-Here are default Bootstrap variables that are unchanged but used in this file and need to be imported beforehand
-DO NOT CHANGE THESE VALUES!
-*/
+//
+// Here are default Bootstrap variables that are unchanged but used in this file and need to be imported beforehand
+// DO NOT CHANGE THESE VALUES!
+//
 
 $white:    #fff !default;
 
 $spacer: 1rem !default;
 
-/*
-Here are changes to the default Bootstrap variables
-*/
+//
+// Here are changes to the default Bootstrap variables
+//
 
 $enable-negative-margins:     	true;
 
@@ -17,7 +17,7 @@ $grid-gutter-width:           	30px;
 
 $card-spacer-y:            		$spacer * 1.5;
 $card-spacer-x:            		$spacer * 1.5;
-$card-cap-bg:                  	$white;
+$card-cap-bg:                  	transparent;
 $card-cap-padding-y:            $card-spacer-y * .5;
 $card-cap-padding-x:            $card-spacer-x;
 
