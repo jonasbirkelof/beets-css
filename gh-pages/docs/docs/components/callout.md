@@ -263,7 +263,7 @@ You can use the header without the body if you just want a quick info with some 
 
 ## Body
 
-The body can contain the information you want to communicate. It can be used without the header for a more compact style, and of course with an icon.
+The body can contain the information you want to communicate. It can be used without the header for a more compact style.
 
 <div class="demo">
 	<div class="callout callout-note mb-0">

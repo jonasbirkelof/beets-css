@@ -21,8 +21,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  logo: assets/images/beets_css_col_inv_100x478.png
-  # logo: assets/images/beets_icon_col_250x250.png
+  logo: assets/images/beets_icon_col_250x250.png
   favicon: assets/images/beets_icon_col_250x250.png
   icon:
     repo: fontawesome/brands/github
