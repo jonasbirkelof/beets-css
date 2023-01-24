@@ -1,6 +1,6 @@
-<p style="display: block; width: 100%;">
+<div style="display: flex; justify-contet: center">
 	<img src="assets/images/beetscss_col_100x416.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px;">
-</p>
+</div>
 
 # About
 Beets CSS is a CSS addon-library that is dependent on the [Bootstrap](https://getbootstrap.com/) framework. You will have to install Bootstrap for this library to work.
