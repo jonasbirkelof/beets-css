@@ -1,4 +1,6 @@
-<img src="assets/images/beets_css_col_100x478.png" width="400">
+<div style="display: block; width: 100%;">
+	<img src="assets/images/beetscss_col_100x416.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px;">
+</div>
 
 # About
 Beets CSS is a CSS addon-library that is dependent on the [Bootstrap](https://getbootstrap.com/) framework. You will have to install Bootstrap for this library to work.
@@ -9,36 +11,17 @@ Bootstrap is open source and because of that Beets CSS is also open source. On t
 
 # Installation
 
-1. Download and install [Bootstrap](https://getbootstrap.com/) version 5.2.2 or newer.
-2. Pre-compiled CSS file (recommended)
-	1. Go to the [Releases page](https://github.com/jonasbirkelof/beets-css/releases) and download the file `beets-css-vx.x.x-dist.zip` for the version you want to use (latest version is recommended).
-	2. Include the CSS file in your project as usual.
-	```html
-	<head>	
-		<link rel="stylesheet" href="./css/beets.css">
-	</head>
-	```
-3. Sass-files
-	1. Clone the master branch:
-	```bash
-	git clone https://github.com/jonasbirkelof/beets-css.git
-	```
-	2. Install the dependencies:
-	```bash
-	npm install
-	```
-	3. Rename the file `webpack.mix.js.example` to `webpack.mix.js` and update the BrowserSync proxy address to your localhost directody for the project.
-	4. You can change the `mix.setPublicPath()` property in `webpack.mix.js` to the target directory for the compiled .css file.
-	5. You find the sass files in the `./src/` directory.
-	6. To build the file, run:
-	```bash
-	npm run build
-	```
-	7. To watch the changes and use BrowserSync for instant reload, run:
-	```bash
-	npm run watch
-	```
-	8. Tip! There is also build in Tailwind CSS support if you want to incorporate those classes. Just make sure there is no comflict with Bootstrap!
+## Compiled CSS file
+
+1. Download and unzip the compiled version of Beets CSS `beets-css-v2.x.x-dist.zip`.
+2. Include `beets.css` in the `<head>` of your projects index file.
+```html
+<link rel="stylesheet" href="~/assets/css/beets-css.css">
+```
+
+## Source files (comming soon!)
+
+At the moment there isn't a bundled zip-file containing the .scss-files. You can get them manually via the source code for this project for the time being.
 
 # Documentation
 
