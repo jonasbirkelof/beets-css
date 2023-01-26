@@ -1,6 +1,6 @@
 # Checks and Radios
 
-In Beets CSS you have assex to checkboxes, radios and switches styled by the theme colors. The reason why Bootstrap haven't included this functionality is propably because they have build in form validation, that styles the form controls like `success` or `danger` if the input is valid or invalid. This is a really good reason so be careful styling your forms with the classes below!
+In Beets CSS you have access to checkboxes, radios and switches styled by the theme colors. The reason why Bootstrap haven't included this functionality is propably because they have build in form validation, that styles the form controls like `success` or `danger` if the input is valid or invalid. This is a really good reason so be careful styling your forms with the classes below!
 
 What is actually useful is the fact that you can create [your own theme color](../../utilities/colors) and use it within your form! 
 
