@@ -28,8 +28,7 @@ theme:
   features:
     - navigation.indexes
     - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.expand
     - navigation.top
     - navigation.tracking
     - toc.follow

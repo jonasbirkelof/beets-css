@@ -287,16 +287,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#font-awesome" class="md-nav__link">
-    Font Awesome
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#beets-css" class="md-nav__link">
     Beets CSS
   </a>
+  
+    <nav class="md-nav" aria-label="Beets CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-css-files" class="md-nav__link">
+    Source CSS files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-compiled-css-file" class="md-nav__link">
+    Pre-compiled CSS file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -336,7 +349,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -370,7 +383,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
       
       
       
@@ -421,7 +434,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
       
       
       
@@ -552,7 +565,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" checked>
       
       
       
@@ -666,16 +679,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#font-awesome" class="md-nav__link">
-    Font Awesome
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#beets-css" class="md-nav__link">
     Beets CSS
   </a>
+  
+    <nav class="md-nav" aria-label="Beets CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-css-files" class="md-nav__link">
+    Source CSS files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-compiled-css-file" class="md-nav__link">
+    Pre-compiled CSS file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -697,14 +723,12 @@
 <h1 id="getting-started">Getting started</h1>
 <h2 id="bootstrap">Bootstrap</h2>
 <p>First of all, you <strong>need</strong> to have Bootstrap installed and working on your site. Please refer to the <a href="https://getbootstrap.com/docs/5.2/getting-started/download/">Bootstrap documentation</a> for how to install Bootstrap. Beets CSS 2.0 is developed using Bootstrap version 5.2.2 so make sure you have at least that version installed.</p>
-<h2 id="font-awesome">Font Awesome</h2>
-<p>This step is optional but you will probably need to have some sort of icon library on your site. There are many good libraries and although Beets CSS should work well with most of them, it was developed with Font Awesome in mind. That means that if you would like the most seamless experience and don't have any personal preference on icon libraries, you should start by looking at Font Awesome.</p>
-<p>Please go to the <a href="https://fontawesome.com/">Font Awesome website</a> for installation documentation.</p>
 <h2 id="beets-css">Beets CSS</h2>
-<p>If you want to make tweeks or changes to Beets CSS and mabye add a custom color scheme, you can use the uncompiled .scss-files and compile yourself. There is not much "magic" going on so any sass compiler should do the trick, although Beets CSS is developed using Webpack, Autoprefixer and PostCSS. Then add the compiled <code>beets-css.css</code> file to your site like you normally would.</p>
-<p>If you just want the out-of-the-box Beets CSS you can just download the css file and add <code>beets-css.css</code> to your site like you normally would.</p>
 <p>For the latest version of Beets CSS, plese see the <a href="https://github.com/jonasbirkelof/beets-css/releases">GitHub Releases</a> page.</p>
-<p>Beets CSS does not need any additional JavaScript to work, the files that comes with Bootstrap will do just fine!</p>
+<h3 id="source-css-files">Source CSS files</h3>
+<p>If you want to make tweeks or changes to Beets CSS and mabye add a custom color scheme, you can use the soure SCSS files and compile Beets CSS yourself. There is not much "magic" going on so any sass compiler should do the trick. Beets CSS is developed using Webpack, Autoprefixer and PostCSS.</p>
+<h3 id="pre-compiled-css-file">Pre-compiled CSS file</h3>
+<p>If you just want the out-of-the-box Beets CSS you can download the pre-compiled CSS file and add <code>beets-css.css</code> to your <code>&lt;head&gt;</code> tag like you normally would.</p>
 
 
 
@@ -797,7 +821,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.sections", "navigation.top", "navigation.tracking", "toc.follow", "search.highlight"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "toc.follow", "search.highlight"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
