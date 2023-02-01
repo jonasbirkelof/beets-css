@@ -17,11 +17,10 @@
     "browser-sync-webpack-plugin": "^2.3.0",
     "cross-env": "^7.0.3",
     "laravel-mix": "^6.0.43",
-    "postcss": "^8.4.12",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.1.0",
-    "tailwindcss": "^3.2.1"
+    "bootstrap": "^5.2.1"
   },
   "repository": {
     "type": "git",
@@ -30,8 +29,5 @@
   "bugs": {
     "url": "https://github.com/jonasbirkelof/dev-env-basic/issues"
   },
-  "homepage": "https://github.com/jonasbirkelof/dev-env-basic#readme",
-  "dependencies": {
-    "bootstrap": "^5.2.1"
-  }
+  "homepage": "https://github.com/jonasbirkelof/dev-env-basic#readme"
 }
