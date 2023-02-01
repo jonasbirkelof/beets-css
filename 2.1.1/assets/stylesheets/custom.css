@@ -1,0 +1,131 @@
+/*
+*
+* Modification to the Material theme
+*
+*/
+
+/* Disable pagination above footer */
+.md-footer__inner {
+	display: none !important;
+}
+/* Re-order hamburger menu */
+nav.md-header__inner > label[for="__drawer"] {
+	order: -1;
+}
+/* Show logo in header on small screens */
+nav.md-header__inner > .md-logo {
+	display: block;
+}
+/* Code block text color */
+.md-typeset pre code {
+	color: var(--md-code-fg-color);
+}
+/* Inline code block text color */
+.md-typeset code:not(.highlight) {
+	color: var(--md-code-hl-function-color);
+}
+/* Remove top margin on code block title */
+.highlight span.filename {
+	margin-top: 0;
+}
+/* Remove margins from codeblocks with line numbers */
+.md-typeset .highlighttable {
+	margin: 0;
+}
+
+/*
+*
+* Fixing styles affected by Bootstrap
+*
+*/
+
+/* Disables styling of links in header */
+header a:hover {
+	color: inherit;
+}
+/* Navigation disappears with <body> */
+body {
+	height: unset;
+}
+/* Paragraphs in admonitions should have a margin-top */
+.admonition p {
+	margin-top: 12px;
+}
+/* Demo box basic styling */
+.demo {
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.demo a {
+	color: var(--bs-link-color);
+}
+.demo a:hover {
+	color: var(--bs-link-hover-color);
+}
+/* Header 4 did not have a font-size */
+.md-typeset h4 {
+	font-size: 16px;
+}
+
+/*
+*
+* Classes to compensate for the Material theme bigger base font size or general styling
+*
+*/
+
+/* Headings */
+.demo h1 {
+	font-size: 40px;	
+}
+.demo h2 {
+	font-size: 32px;	
+}
+.demo h3 {
+	font-size: 28px;	
+}
+.demo h4 {
+	font-size: 24px;	
+}
+.demo h5 {
+	font-size: 20px;	
+}
+.demo h6 {
+	font-size: 16px;	
+}
+
+/* Rounded border */
+.demo .rounded {
+	border-radius: 6px !important;
+}
+
+/* Buttons */
+.demo .btn {
+	font-size: 16px;
+	padding: 6px 12px;
+	border-radius: 6px;
+}
+.demo .btn.btn-sm {
+	font-size: 14px;
+	padding: 4px 6px;
+}
+.demo .btn.btn-lg {
+	font-size: 20px;
+	padding: 8px 16px;
+}
+
+/*
+*
+* Misc
+*
+*/
+
+.demo {
+	padding: 24px;
+	border: 1px solid #eeeeee;
+	border-bottom: 0;
+}
+.highlight {
+	border: 1px solid #eeeeee;
+}
+.highlight > pre {
+	margin: 0;
+}
