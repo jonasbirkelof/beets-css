@@ -1,4 +1,5 @@
-<img src="assets/images/beetscss_col_100x416.png" style="height: 80px;">
+<img src=".github/assets/images/beetscss_col_100x416.png#gh-light-mode-only-" style="height: 80px;">
+<img src=".github/assets/images/beetscss_col_inv_100x416.png#gh-dark-mode-only" style="height: 80px;">
 
 # About
 Beets CSS is a CSS addon-library that is dependent on the [Bootstrap](https://getbootstrap.com/) framework. You will have to install Bootstrap for this library to work.
@@ -12,7 +13,7 @@ Bootstrap is open source and because of that Beets CSS is also open source. On t
 ## Compiled CSS file
 
 1. Download and unzip the compiled version of Beets CSS `beets-css-v2.x.x-dist.zip`.
-2. Include `beets.css` in the `<head>` of your projects index file.
+2. Include `beets-css.css` in the `<head>` of your projects index file.
 ```html
 <link rel="stylesheet" href="~/assets/css/beets-css.css">
 ```

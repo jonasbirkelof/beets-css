@@ -1,5 +1,5 @@
 dist/css/app.css
-dist/js/app.js
+dist/*.json
 node_modules/
 package-lock.json
 webpack.mix.js
