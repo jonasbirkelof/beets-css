@@ -1,4 +1,5 @@
-<img src="assets/images/beetscss_col_100x416.png" style="height: 80px;">
+<img src="assets/images/beetscss_col_100x416.png#gh-light-mode-only-" style="height: 80px;">
+<img src="assets/images/beetscss_col_inv_100x416.png#gh-dark-mode-only" style="height: 80px;">
 
 # About
 Beets CSS is a CSS addon-library that is dependent on the [Bootstrap](https://getbootstrap.com/) framework. You will have to install Bootstrap for this library to work.
